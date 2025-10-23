@@ -3,13 +3,13 @@
 module.exports = {
   title: "Mayur's Notebook",
   tagline: "My study notes",
-  url: "https://<GITHUB_USER>.github.io", // Your website URL
-  baseUrl: "/<REPO_NAME>/", // e.g. "/mayurs-notebook/" or "/" for user/organization pages
+  url: "https://mayurkukatkar.github.io", // Your website URL
+  baseUrl: "/notebook/", // e.g. "/mayurs-notebook/" or "/" for user/organization pages
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "static/img/logo.svg",
-  organizationName: "<GITHUB_USER>", // GitHub org/user name.
-  projectName: "<REPO_NAME>", // Repo name.
+  organizationName: "mayurkukatkar", // GitHub org/user name.
+  projectName: "notebook", // Repo name.
   deployment: {
     branch: "gh-pages",
   },
@@ -26,7 +26,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/", // Serve docs at root
           editUrl:
-            "https://github.com/<GITHUB_USER>/<REPO_NAME>/edit/main/",
+            "https://github.com/mayurkukatkar/notebook/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Enable MDX/Markdown support (default).
@@ -66,7 +66,7 @@ module.exports = {
           },
           // GitHub link
           {
-            href: "https://github.com/<GITHUB_USER>/<REPO_NAME>",
+            href: "https://github.com/mayurkukatkar/notebook",
             label: "GitHub",
             position: "right",
           },
@@ -116,8 +116,8 @@ module.exports = {
       },
       // Algolia placeholder config — replace with your keys for full search
       algolia: {
-        appId: process.env.ALGOLIA_APP_ID || "YOUR_ALGOLIA_APP_ID",
-        apiKey: process.env.ALGOLIA_API_KEY || "YOUR_ALGOLIA_SEARCH_KEY",
+        appId: process.env.ALGOLIA_APP_ID || "U20TV2YB7D",
+        apiKey: process.env.ALGOLIA_API_KEY || "baaf3150aa05875ded4b71d52306aef6",
         indexName: process.env.ALGOLIA_INDEX_NAME || "YOUR_INDEX_NAME",
       },
       // Local search plugin config (fallback) — configured separately in plugins section
