@@ -1,0 +1,15 @@
+{
+  "name": "mayurs-notebook",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "deploy": "GIT_USER=<GITHUB_USER> && npm run build && npx docusaurus deploy"
+  },
+  "devDependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.0.0",
+    "gh-pages": "^5.0.0"
+  }
+}

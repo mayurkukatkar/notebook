@@ -1,0 +1,112 @@
+/* src/css/custom.css */
+
+/* Brand colors */
+:root {
+  --ifm-color-primary: #0B3D91; /* premium navy */
+  --ifm-color-primary-50: #E9F0FF;
+  --ifm-color-accent: #C59D5F; /* gold accent */
+  --ifm-font-family-base: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+
+  /* Accessible text colors */
+  --brand-on-primary: #ffffff;
+  --muted-text: #6b7280;
+}
+
+/* Dark mode tweaks */
+[data-theme='dark'] {
+  --ifm-color-primary: #0B3D91; /* keep primary consistent */
+  --ifm-color-accent: #C59D5F;
+  --ifm-background-color: #0b1220;
+  --ifm-font-color-base: #e6eef9;
+  --muted-text: #9ca3af;
+}
+
+/* Header / hero CTA */
+.hero {
+  padding: 3rem 1.25rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(11,61,145,0.04), transparent);
+  border-radius: 12px;
+}
+
+.hero h1 {
+  color: var(--ifm-color-primary);
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p.lead {
+  color: var(--muted-text);
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+/* CTA button */
+.btn-cta {
+  background-color: var(--ifm-color-primary);
+  color: var(--brand-on-primary);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: var(--ifm-color-primary);
+  color: var(--brand-on-primary);
+  z-index: 9999;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Code blocks: make the copy button more visible */
+.docusaurus-highlight {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(2,6,23,0.06);
+}
+
+/* Prism token color adjustments for better contrast in dark mode */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a737d;
+}
+
+/* Small screens: adjust hero */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Utility spacing used in the index page */
+.u-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
